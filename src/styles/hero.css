@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.bg-image{
+    background: linear-gradient(rgba(146, 56, 176, 0.3),rgba(163, 64, 197, 0.5)),
+    url("../assets/background.jpg") center/cover no-repeat
+}
+.bg-image h1{
+    font-family:  'Righteous', cursive;
+}
