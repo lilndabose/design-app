@@ -35,15 +35,15 @@ const Navbar=()=>{
     <div className='w-full flex bg-[#232e3e] justify-between flex-col items-center h-[100px]'>
       <nav className="w-full flex bg-[#232e3e] justify-between items-center h-[50px]">
         <div className='w-[40%] h-full flex justify-around items-center'>
-          <div className='w-[15%] md:w-[25%] h-full flex justify-center items-center'>
-              <GiHamburgerMenu color="orange" size={28} className="lg:invisible md:visible"/>
+          <div className='w-[15%] h-full flex justify-center items-center'>
+              <GiHamburgerMenu color="orange" size={28} />
               <span className='text-white text-uppercase'>Logo</span>
           </div>
-          <div className='w-[60%] h-full flex justify-around items-center xs:invisible sm:invisible md:invisible lg:visible'>
+          <div className='w-[60%] h-full flex justify-around items-center'>
               {
                 navLinks.map((item,index)=>{
                   return(
-                    <Link to="/" type="button" data-dropdown-toggle={'dropDown'+index} data-dropdown-placement="bottom-start" className='text-gray-400'>{item.title}</Link>
+                    <Link to="/" type="button" className='text-gray-400'>{item.title}</Link>
                   )
                 })
               }
@@ -56,7 +56,7 @@ const Navbar=()=>{
       </nav>
 
       <div className='w-full h-[50px] bg-white flex justify-center items-center'>
-          <div className='w-[98%] flex justify-between items-center md:invisible'>
+          <div className='w-[98%] flex justify-between items-center'>
               <h2 className='text-lg font-bold'>My Account</h2>
               {
                 !isSuccess ?
